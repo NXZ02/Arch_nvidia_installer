@@ -1,5 +1,4 @@
 figlet SETUP . sh | lolcat
-sleep 1
 arch_yay() {
     if ! which yay > /dev/null; then
     clear
