@@ -9,7 +9,7 @@ project rebuild gui installer gpu nvidia 340xx 390xx 470xx 525xx 535xx
 # desktop works
 5. xfce
 # desktop not works
-6. gnome
+6. gnome ( bug font )
 
 ![Screenshot_2024-04-17_19-58-59](https://github.com/NXZ02/Arch_nvidia_installer/assets/109139829/4631a971-b8b8-4713-9003-9040a6ef8b1b)
 
