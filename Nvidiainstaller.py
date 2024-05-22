@@ -3,10 +3,11 @@ from tkinter import *
 from PIL import Image, ImageTk ############### Import lib
 import os                      ###############
 import tkinter.messagebox
+from customtkinter import *
 ###################################
 
 # config 
-root = Tk() # root = tkinter()
+root = CTk() # root = tkinter()
 root.geometry("600x500") # resize windows 600x500
 root.title("Nvidia Installler") # title text program
 
@@ -46,9 +47,10 @@ logo_label.place(x=520, y=10)  # Adjust position as needed
 
 
 #####################################################33
-button_img = Image.open("next1.png")
-resize_button_img = button_img.resize((150, 45))
-button_photo = ImageTk.PhotoImage(resize_button_img)
+#button_img = Image.open("next1.png")
+#resize_button_img = button_img.resize((150, 45))
+#button_photo = ImageTk.PhotoImage(resize_button_img)
+
 ######################################################
 
 ############################################ create frame gui
@@ -68,8 +70,9 @@ TextFrame1 = Label(frame, text="Create By Nxz02 For Project Begin GUI Python \nF
 TextFrame1.pack(padx=30,pady=40)
 
 #create_button = Button(root,text="HELLO") .place(x=90,y=60)
-create_button = Button(root, image=button_photo,command=Cilck_next) .place(x=400,y=400) # Button next gui
-create_exit = Button(root,text="EXIT",command=Cilck_exit) .place(x=300,y=425) # buuton exit gui
+create_button = CTkButton(root, text="Next",command=Cilck_next,border_color="#FFCC70",fg_color="green",border_width=2, hover_color="black") .place(x=400,y=400) # Button next gui
+create_exit = CTkButton(root, text="Quit",command=Cilck_next,border_color="#FFCC70",fg_color="red",border_width=2, hover_color="black") .place(x=230,y=400)
+#create_exit = Button(root,text="EXIT",command=Cilck_exit) .place(x=300,y=425) # buuton exit gui
 
 ############################################################################################################################################
 
