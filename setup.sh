@@ -10,6 +10,7 @@ arch_yay() {
 fi
 }
 sudo pacman -S python-pip --noconfirm
+pip install customtkinter --break-system-packages
 sudo pacman -S --noconfirm tk python-pillow
 pip3 install pillow --break-system-packages
 arch_yay
